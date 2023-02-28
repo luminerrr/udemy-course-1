@@ -44,7 +44,6 @@ export default function Home() {
         content =
         products.data.map((product, key)=>
             <div key={key}>
-                {product.name}
                 <ProductCard product={product}/>
             </div>
         )

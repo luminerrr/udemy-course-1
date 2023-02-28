@@ -9,20 +9,21 @@ import Product from './views/Product';
 function App() {
   return (<>
    
+    <div className='relative pb-10 min-h-screen'>
+      <BrowserRouter>
 
-    <BrowserRouter>
-      <Header />
-
-      <Footer />
-      <div className='p-3'>
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/products/:id' element={<Product />} />
-        </Routes>
-      </div>
-      
-    </BrowserRouter>
+        <Header />
+        <Footer />
+        <div className='p-3'>
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/about' element={<About />} />
+            <Route path='/products/:id' element={<Product />} />
+          </Routes>
+        </div>
+        
+      </BrowserRouter>
+    </div>
     
   </>);
 }
