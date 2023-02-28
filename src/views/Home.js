@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import Loader from '../components/Loader'
+import ProductCard from "../components/ProductCard";
 
 export default function Home() {
     let content = null;
@@ -44,6 +45,7 @@ export default function Home() {
         products.data.map((product, key)=>
             <div key={key}>
                 {product.name}
+                <ProductCard product={product}/>
             </div>
         )
     }

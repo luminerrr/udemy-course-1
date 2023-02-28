@@ -47,7 +47,7 @@ export default function Product(){
 
     if(product.data){
         content =
-            <ProductCard product = {product}/>
+            <ProductCard product = {product.data}/>
     }
 
     return <>{content}</>
